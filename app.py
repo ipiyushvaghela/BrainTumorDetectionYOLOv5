@@ -2,23 +2,17 @@ import streamlit as st
 import time
 from io import StringIO
 from pathlib import Path
-import streamlit as st
-import time
-import os
-import sys
-import argparse
 from PIL import Image
 import torch
 import numpy as np
 import cv2 as cv
-import tempfile
 
 
 @st.cache(allow_output_mutation=True)
 def load_model_axial():
     with st.spinner('Model is being loaded for axial...'):
         # model = torch.hub.load('ultralytics/yolov5', 'custom', path=r'D:\E\DXAssignment\streamlit\braintumor\models\best_1.pt', force_reload=True)
-        model = torch.hub.load('ultralytics/yolov5', 'custom', path=r'D:\E\DXAssignment\YOLOv5Projects\yolov5\runs\train\exp16\weights\best.pt', force_reload=True)
+        model = torch.hub.load('ultralytics/yolov5', 'custom', path=r'D:\E\DXAssignment\YOLOv5Projects\yolov5\runs\train\exp16\weights\best_1.pt', force_reload=True)
     return model
 
 @st.cache(allow_output_mutation=True)
