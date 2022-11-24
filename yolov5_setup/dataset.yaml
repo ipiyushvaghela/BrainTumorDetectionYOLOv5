@@ -1,0 +1,8 @@
+# path: D:\E\DXAssignment\YOLOv5Projects\brain\axial_t1wce_2_class
+train: D:\E\DXAssignment\YOLOv5Projects\braintumorDATA\sagittal_t1wce_2_class_aug\train
+val: D:\E\DXAssignment\YOLOv5Projects\braintumorDATA\sagittal_t1wce_2_class_aug\testing_data
+# test: D:\E\DXAssignment\YOLOv5Projects\braintumorDATA\axial_t1wce_2_class\testing_data
+
+# Classes
+nc: 2
+names: ['negative','positive']
